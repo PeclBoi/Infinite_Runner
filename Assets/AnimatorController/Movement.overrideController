@@ -6,10 +6,10 @@ AnimatorOverrideController:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Runner
+  m_Name: Movement
   m_Controller: {fileID: 9100000, guid: 2014f39ad047ad8489b13fae04bde315, type: 2}
   m_Clips:
-  - m_OriginalClip: {fileID: 7400000, guid: 48bd24883024e6a49aaa280d297b3062, type: 2}
-    m_OverrideClip: {fileID: 7400000, guid: 48bd24883024e6a49aaa280d297b3062, type: 2}
   - m_OriginalClip: {fileID: 7400000, guid: e2b0202a8b13d61449581bb1f82347cb, type: 2}
     m_OverrideClip: {fileID: 7400000, guid: e2b0202a8b13d61449581bb1f82347cb, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: ee150ec897d2f184680ff37b0295e713, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: ee150ec897d2f184680ff37b0295e713, type: 2}
