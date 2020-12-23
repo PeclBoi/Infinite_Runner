@@ -254,6 +254,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: af97002daa40e4b4681960bc5195ee27, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  initPart: {fileID: 5393764305445061356, guid: 9fba0c8ef56d2ed4f97da29e9a29b528, type: 3}
+  coursePart_1: {fileID: 7259078349810899039, guid: d25bbe2a6d57cfa4c91520534d372f22, type: 3}
 --- !u!4 &1401561840
 Transform:
   m_ObjectHideFlags: 0
@@ -400,10 +402,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: InitStage
       objectReference: {fileID: 0}
-    - target: {fileID: 5393764305445061359, guid: 9fba0c8ef56d2ed4f97da29e9a29b528, type: 3}
-      propertyPath: m_TagString
-      value: Ground
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9fba0c8ef56d2ed4f97da29e9a29b528, type: 3}
 --- !u!1001 &7160250375350510733
@@ -423,7 +421,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7160250375745325361, guid: be2ed16a0e083294c97d14ea98d6e541, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.83
+      value: -3.19
       objectReference: {fileID: 0}
     - target: {fileID: 7160250375745325361, guid: be2ed16a0e083294c97d14ea98d6e541, type: 3}
       propertyPath: m_LocalPosition.z
