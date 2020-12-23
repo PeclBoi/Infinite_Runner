@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 7259078349810899039}
   m_Layer: 8
   m_Name: CoursePart1
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -44,7 +44,7 @@ GameObject:
   - component: {fileID: 8557147860861879087}
   m_Layer: 8
   m_Name: Platform
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

@@ -5,6 +5,7 @@ using UnityEngine;
 public class LevelGenerator : MonoBehaviour
 {
     [SerializeField] private Transform coursePart_1;
+
     private void Awake()
     {
         SpawnLevelPart(new Vector3(5, -5));
