@@ -26,13 +26,28 @@ public class AnimationController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.Space) && isOnGround()) {
+        if (animator.GetBool("Slide") == true)
+        {
+            animator.SetBool("Slide", false);
+        }
+
+        if (Input.GetKeyDown(KeyCode.Space) && isOnGround()) {
             animator.SetBool("Jump", true);
         }
+
+        if (Input.GetKeyDown(KeyCode.Y) && isOnGround())
+        {
+            if(animator.GetBool("Slide") == false)
+            {
+                print("slide");
+                animator.SetBool("Slide", true);
+            } 
+        }
+
+       
     }
 
     private bool isOnGround() {
-
         // return Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, layerMask);
         RaycastHit2D raycastHit2D = Physics2D.BoxCast(boxCollider2D.bounds.center, boxCollider2D.bounds.size, 0f, Vector2.down, 0.1f, layerMask);
         return raycastHit2D.collider != null;
