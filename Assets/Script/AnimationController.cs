@@ -11,7 +11,6 @@ public class AnimationController : MonoBehaviour
     // Start is called before the first frame update
 
     void OnTriggerEnter2D(Collider2D collider) {
-        print("Hi");
         if(collider.gameObject.tag == "Ground") {
             animator.SetBool("Jump", false);
         }

@@ -200,11 +200,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 765658942}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 16.034, y: 0.012, z: 0}
+  m_LocalPosition: {x: 50.2, y: 0.012, z: 0}
   m_LocalScale: {x: 1, y: 1.9031249, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!95 &765658945
 Animator:
@@ -255,7 +255,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   initPart: {fileID: 5393764305445061356, guid: 9fba0c8ef56d2ed4f97da29e9a29b528, type: 3}
-  coursePart_1: {fileID: 7259078349810899039, guid: d25bbe2a6d57cfa4c91520534d372f22, type: 3}
+  courseParts:
+  - {fileID: 5086560921222543107, guid: f95e61d01c66a1248a296baf01e7f657, type: 3}
+  - {fileID: 6681289299909448753, guid: afabab9462efe934fb7d434149cece77, type: 3}
 --- !u!4 &1401561840
 Transform:
   m_ObjectHideFlags: 0
@@ -402,6 +404,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: InitStage
       objectReference: {fileID: 0}
+    - target: {fileID: 5393764305445061359, guid: 9fba0c8ef56d2ed4f97da29e9a29b528, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 7778675164630561774, guid: 9fba0c8ef56d2ed4f97da29e9a29b528, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9fba0c8ef56d2ed4f97da29e9a29b528, type: 3}
 --- !u!1001 &7160250375350510733
@@ -413,7 +423,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 7160250375745325361, guid: be2ed16a0e083294c97d14ea98d6e541, type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7160250375745325361, guid: be2ed16a0e083294c97d14ea98d6e541, type: 3}
       propertyPath: m_LocalPosition.x
