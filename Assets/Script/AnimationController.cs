@@ -6,11 +6,17 @@ public class AnimationController : MonoBehaviour
 {
     BoxCollider2D boxCollider2D;
     Rigidbody2D rigidbody2d;
+    private float timeSlided;
+    [SerializeField] private float slideTime = 1f;
     [SerializeField] public Animator animator;
     [SerializeField] private LayerMask layerMask;
+    [SerializeField] private BoxCollider2D idleCollider;
+    [SerializeField] private BoxCollider2D slideCollider;
+
     // Start is called before the first frame update
 
     void OnTriggerEnter2D(Collider2D collider) {
+        print("Hit");
         if(collider.gameObject.tag == "Ground") {
             animator.SetBool("Jump", false);
         }
@@ -25,11 +31,6 @@ public class AnimationController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (animator.GetBool("Slide") == true)
-        {
-            animator.SetBool("Slide", false);
-        }
-
         if (Input.GetKeyDown(KeyCode.Space) && isOnGround()) {
             animator.SetBool("Jump", true);
         }
@@ -37,10 +38,23 @@ public class AnimationController : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Y) && isOnGround())
         {
             if(animator.GetBool("Slide") == false)
-            {
-                print("slide");
+            {           
+                timeSlided = 0f;
                 animator.SetBool("Slide", true);
-            } 
+            }
+            idleCollider.enabled = false;
+            slideCollider.enabled = true;
+        }
+
+        if (animator.GetBool("Slide") == true)
+        {
+            timeSlided += Time.deltaTime;
+            if(timeSlided > slideTime)
+            {
+                animator.SetBool("Slide", false);
+                idleCollider.enabled = true;
+                slideCollider.enabled = false;
+            }
         }
 
        
