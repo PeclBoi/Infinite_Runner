@@ -32,6 +32,36 @@ TextureImporter:
   - first:
       213: -5525011467041565824
     second: ducknsprite_9
+  - first:
+      213: 4857335772653305134
+    second: slide_0
+  - first:
+      213: -329969244792713109
+    second: slide_1
+  - first:
+      213: -7909398147288137428
+    second: slide_2
+  - first:
+      213: 5850636965976271850
+    second: slide_3
+  - first:
+      213: -5470278947253641299
+    second: slide_4
+  - first:
+      213: -7826137699747185008
+    second: slide_5
+  - first:
+      213: -3649443920344856325
+    second: slide_6
+  - first:
+      213: 4606067871806678329
+    second: slide_7
+  - first:
+      213: -5719591081113913424
+    second: slide_8
+  - first:
+      213: 17345911028680437
+    second: slide_9
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -62,7 +92,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: -1
+    filterMode: 0
     aniso: -1
     mipBias: -100
     wrapU: 1
@@ -131,211 +161,211 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Slide
+      name: slide_0
       rect:
         serializedVersion: 2
-        x: 6
-        y: 4
-        width: 43
-        height: 56
+        x: 0
+        y: 0
+        width: 81
+        height: 74
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4b541b0f304c19b00800000000000000
-      internalID: 833662927242347956
+      spriteID: e2d3cc36629b86340800000000000000
+      internalID: 4857335772653305134
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ducknsprite_1
+      name: slide_1
       rect:
         serializedVersion: 2
-        x: 67
-        y: 5
-        width: 45
-        height: 52
+        x: 81
+        y: 0
+        width: 81
+        height: 74
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b72f926e4d2028420800000000000000
-      internalID: 2630668245755622011
+      spriteID: b60935958b6bb6bf0800000000000000
+      internalID: -329969244792713109
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ducknsprite_2
+      name: slide_2
       rect:
         serializedVersion: 2
-        x: 127
-        y: 4
-        width: 39
-        height: 46
+        x: 162
+        y: 0
+        width: 81
+        height: 74
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 87c41c62e2dda6500800000000000000
-      internalID: 390367508009405560
+      spriteID: c2102c37a4c2c3290800000000000000
+      internalID: -7909398147288137428
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ducknsprite_3
+      name: slide_3
       rect:
         serializedVersion: 2
-        x: 179
-        y: 3
-        width: 35
-        height: 44
+        x: 243
+        y: 0
+        width: 81
+        height: 74
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 19bddd76f9b54e360800000000000000
-      internalID: 7197978844645415825
+      spriteID: aebe8c29253a13150800000000000000
+      internalID: 5850636965976271850
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ducknsprite_4
+      name: slide_4
       rect:
         serializedVersion: 2
-        x: 229
-        y: 4
-        width: 43
-        height: 42
+        x: 324
+        y: 0
+        width: 81
+        height: 74
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a9bd7f125c6afd290800000000000000
-      internalID: -7863383058756936806
+      spriteID: daf16aeb74aa514b0800000000000000
+      internalID: -5470278947253641299
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ducknsprite_5
+      name: slide_5
       rect:
         serializedVersion: 2
-        x: 284
-        y: 8
-        width: 41
-        height: 38
+        x: 405
+        y: 0
+        width: 81
+        height: 74
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 53ca3c37fc2e6b900800000000000000
-      internalID: 699996172731001909
+      spriteID: 09eb64b0a39f36390800000000000000
+      internalID: -7826137699747185008
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ducknsprite_6
+      name: slide_6
       rect:
         serializedVersion: 2
-        x: 335
-        y: 5
-        width: 42
-        height: 40
+        x: 486
+        y: 0
+        width: 81
+        height: 74
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ea77be5ae37eca620800000000000000
-      internalID: 2786856525693155246
+      spriteID: bf8c22c07129a5dc0800000000000000
+      internalID: -3649443920344856325
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ducknsprite_7
+      name: slide_7
       rect:
         serializedVersion: 2
-        x: 400
-        y: 5
-        width: 59
-        height: 47
+        x: 567
+        y: 0
+        width: 81
+        height: 74
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f4b23bacf019d0e80800000000000000
-      internalID: -8210747048615269553
+      spriteID: 935606e435a0cef30800000000000000
+      internalID: 4606067871806678329
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ducknsprite_8
+      name: slide_8
       rect:
         serializedVersion: 2
-        x: 481
-        y: 5
-        width: 60
-        height: 46
+        x: 648
+        y: 0
+        width: 81
+        height: 74
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 173a00c03892436d0800000000000000
-      internalID: -3011736607985196175
+      spriteID: 0b776b5273eef90b0800000000000000
+      internalID: -5719591081113913424
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ducknsprite_9
+      name: slide_9
       rect:
         serializedVersion: 2
-        x: 629
-        y: 5
-        width: 64
-        height: 41
+        x: 729
+        y: 0
+        width: 81
+        height: 74
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 083170fe7573353b0800000000000000
-      internalID: -5525011467041565824
+      spriteID: 5f68b21a300ad3000800000000000000
+      internalID: 17345911028680437
       vertices: []
       indices: 
       edges: []
