@@ -14,19 +14,13 @@ public class Movement : MonoBehaviour
     [SerializeField] private int speed;
     [SerializeField] private float jumpVelocity = 100f;
     [SerializeField] private LayerMask layerMask;
-    [SerializeField] Transform groundCheck;
-    [SerializeField] float groundCheckRadius;
     private Rigidbody2D rigidbody2d;
-    private BoxCollider2D boxCollider2D;
-    private AnimatorOverrideController animator;
     private float JumpHight;
     private float maxJumpHight = 3;
 
     void Start()
     {
-        boxCollider2D = transform.GetComponent<BoxCollider2D>();
         rigidbody2d = transform.GetComponent<Rigidbody2D>();
-        animator = GetComponent<AnimatorOverrideController>();
     }
 
     void Update()
@@ -66,8 +60,8 @@ public class Movement : MonoBehaviour
 
     private bool isOnGround()
     {
-        //There is probalbly better solution to check ground!
-        RaycastHit2D raycastHit2D = Physics2D.BoxCast(boxCollider2D.bounds.center, boxCollider2D.bounds.size, 0f, Vector2.down, 0.1f, layerMask);
-        return raycastHit2D.collider != null;
+       
+        RaycastHit2D hit = Physics2D.Raycast(transform.position, Vector2.down, 1.3f, layerMask);
+        return hit.collider != null;
     }
 }

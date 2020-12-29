@@ -1,11 +1,10 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class AnimationController : MonoBehaviour
 {
-    BoxCollider2D boxCollider2D;
-    Rigidbody2D rigidbody2d;
     private float timeSlided;
     [SerializeField] private float slideTime = 1f;
     [SerializeField] public Animator animator;
@@ -13,57 +12,79 @@ public class AnimationController : MonoBehaviour
     [SerializeField] private BoxCollider2D idleCollider;
     [SerializeField] private BoxCollider2D slideCollider;
 
-    // Start is called before the first frame update
+    void Start()
+    {
+        SetHitboxForRunning();
+    }
 
-    void OnTriggerEnter2D(Collider2D collider) {
-        print("Hit");
-        if(collider.gameObject.tag == "Ground") {
+    void Update()
+    {
+        UpdateAnimation();
+    }
+
+    private void UpdateAnimation()
+    {
+        JumpHandler();
+        SlideHandler();
+    }
+
+
+    private void JumpHandler()
+    {
+        /* Jump is set false in OnTriggerEnter2d(...)*/
+        if (Input.GetKeyDown(KeyCode.Space) && isOnGround())
+        {
+            animator.SetBool("Jump", true);
+        }
+    }
+
+    void OnTriggerEnter2D(Collider2D collider)
+    {
+        if (collider.gameObject.tag == "Ground")
+        {
             animator.SetBool("Jump", false);
         }
     }
 
-    void Start()
+    private void SlideHandler()
     {
-        boxCollider2D = transform.GetComponent<BoxCollider2D>();
-        rigidbody2d = transform.GetComponent<Rigidbody2D>();
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.Space) && isOnGround()) {
-            animator.SetBool("Jump", true);
-        }
-
         if (Input.GetKeyDown(KeyCode.Y) && isOnGround())
         {
-            if(animator.GetBool("Slide") == false)
-            {           
+            if (animator.GetBool("Slide") == false)
+            {
                 timeSlided = 0f;
                 animator.SetBool("Slide", true);
             }
-            idleCollider.enabled = false;
-            slideCollider.enabled = true;
+            SetHitboxForSlide();
         }
 
         if (animator.GetBool("Slide") == true)
         {
             timeSlided += Time.deltaTime;
-            if(timeSlided > slideTime)
+            if (timeSlided > slideTime)
             {
                 animator.SetBool("Slide", false);
-                idleCollider.enabled = true;
-                slideCollider.enabled = false;
+                SetHitboxForRunning();
             }
         }
-
-       
     }
 
-    private bool isOnGround() {
-        // return Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, layerMask);
-        RaycastHit2D raycastHit2D = Physics2D.BoxCast(boxCollider2D.bounds.center, boxCollider2D.bounds.size, 0f, Vector2.down, 0.1f, layerMask);
-        return raycastHit2D.collider != null;
+    private void SetHitboxForSlide()
+    {
+        idleCollider.enabled = false;
+        slideCollider.enabled = true;
     }
 
+    private void SetHitboxForRunning()
+    {
+        idleCollider.enabled = true;
+        slideCollider.enabled = false;
+    }
+
+    private bool isOnGround()
+    {
+        RaycastHit2D hit = Physics2D.Raycast(transform.position, Vector2.down, 1.3f, layerMask);
+        Debug.DrawRay(transform.position, Vector2.down * 1.3f);
+        return hit.collider != null;
+    }
 }
