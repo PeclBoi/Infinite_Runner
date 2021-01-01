@@ -295,6 +295,14 @@ PrefabInstance:
       propertyPath: offset
       value: -7
       objectReference: {fileID: 0}
+    - target: {fileID: 886863370252892701, guid: 6fc3aa56b54203c4298271199ebe0c25, type: 3}
+      propertyPath: offsetX
+      value: -7
+      objectReference: {fileID: 0}
+    - target: {fileID: 886863370252892701, guid: 6fc3aa56b54203c4298271199ebe0c25, type: 3}
+      propertyPath: offsetY
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 886863370252892703, guid: 6fc3aa56b54203c4298271199ebe0c25, type: 3}
       propertyPath: m_Name
       value: Main Camera
@@ -421,9 +429,37 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1030953987, guid: be2ed16a0e083294c97d14ea98d6e541, type: 3}
+      propertyPath: m_Size.y
+      value: 0.33076248
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030953987, guid: be2ed16a0e083294c97d14ea98d6e541, type: 3}
+      propertyPath: m_Offset.y
+      value: -0.20140259
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030953987, guid: be2ed16a0e083294c97d14ea98d6e541, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1731498139, guid: be2ed16a0e083294c97d14ea98d6e541, type: 3}
+      propertyPath: m_Size.y
+      value: 0.5562064
+      objectReference: {fileID: 0}
+    - target: {fileID: 1731498139, guid: be2ed16a0e083294c97d14ea98d6e541, type: 3}
+      propertyPath: m_Offset.y
+      value: 0.054263145
+      objectReference: {fileID: 0}
+    - target: {fileID: 1731498139, guid: be2ed16a0e083294c97d14ea98d6e541, type: 3}
+      propertyPath: m_EdgeRadius
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2094070497, guid: be2ed16a0e083294c97d14ea98d6e541, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.01
+      objectReference: {fileID: 0}
     - target: {fileID: 7160250375745325360, guid: be2ed16a0e083294c97d14ea98d6e541, type: 3}
       propertyPath: speed
-      value: 0
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 7160250375745325361, guid: be2ed16a0e083294c97d14ea98d6e541, type: 3}
       propertyPath: m_RootOrder

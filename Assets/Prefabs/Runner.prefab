@@ -43,6 +43,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1030953986}
   - component: {fileID: 1030953987}
+  - component: {fileID: 328580652}
   m_Layer: 0
   m_Name: SlideHitbox
   m_TagString: Untagged
@@ -90,6 +91,18 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.59966743, y: 0.46397874}
   m_EdgeRadius: 0
+--- !u!114 &328580652
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1030953985}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4c25c06bbf14149439b7200894e890a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1731498137
 GameObject:
   m_ObjectHideFlags: 0
@@ -100,6 +113,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1731498138}
   - component: {fileID: 1731498139}
+  - component: {fileID: 741365288}
   m_Layer: 0
   m_Name: IdleHitbox
   m_TagString: Untagged
@@ -147,6 +161,18 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.5464034, y: 0.7066411}
   m_EdgeRadius: 0
+--- !u!114 &741365288
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1731498137}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4c25c06bbf14149439b7200894e890a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2094070496
 GameObject:
   m_ObjectHideFlags: 0
@@ -218,6 +244,7 @@ GameObject:
   - component: {fileID: 7160250375745325389}
   - component: {fileID: 7160250375745325391}
   - component: {fileID: 7160250375745325360}
+  - component: {fileID: 400915181}
   - component: {fileID: 283760648}
   m_Layer: 0
   m_Name: Runner
@@ -323,11 +350,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c9115e1c2660a8e4a9cdf3f1f1f9a67f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  slideTime: 1
-  animator: {fileID: 7160250375745325367}
   layerMask:
     serializedVersion: 2
     m_Bits: 256
+  slideTime: 1
+  animator: {fileID: 7160250375745325367}
   idleCollider: {fileID: 1731498139}
   slideCollider: {fileID: 1030953987}
 --- !u!114 &7160250375745325391
@@ -355,8 +382,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df5c6e86ec1e0db4a812985ad83f8b57, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 15
+  layerMask:
+    serializedVersion: 2
+    m_Bits: 256
+  speed: 4
   jumpVelocity: 550
+--- !u!114 &400915181
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7160250375745325364}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4936fde2eda4b1941a50c7d441352650, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
   layerMask:
     serializedVersion: 2
     m_Bits: 256
