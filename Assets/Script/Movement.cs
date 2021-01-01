@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Movement : MonoBehaviour
+public class Movement : CollisionMannager
 {
     enum CostumInput
     {
@@ -13,7 +13,7 @@ public class Movement : MonoBehaviour
 
     [SerializeField] private int speed;
     [SerializeField] private float jumpVelocity = 100f;
-    [SerializeField] private LayerMask layerMask;
+    
     private Rigidbody2D rigidbody2d;
     private float JumpHight;
     private float maxJumpHight = 3;
@@ -37,7 +37,6 @@ public class Movement : MonoBehaviour
         }
         else if (isOnGround())
         {
-            //run (idle state)
             rigidbody2d.velocity = new Vector2(speed, 0);
         }
 
@@ -58,10 +57,5 @@ public class Movement : MonoBehaviour
         }
     }
 
-    private bool isOnGround()
-    {
-       
-        RaycastHit2D hit = Physics2D.Raycast(transform.position, Vector2.down, 1.3f, layerMask);
-        return hit.collider != null;
-    }
+    
 }

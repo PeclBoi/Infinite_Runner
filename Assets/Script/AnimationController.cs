@@ -3,12 +3,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class AnimationController : MonoBehaviour
+public class AnimationController : CollisionMannager
 {
     private float timeSlided;
     [SerializeField] private float slideTime = 1f;
     [SerializeField] public Animator animator;
-    [SerializeField] private LayerMask layerMask;
     [SerializeField] private BoxCollider2D idleCollider;
     [SerializeField] private BoxCollider2D slideCollider;
 
@@ -31,16 +30,16 @@ public class AnimationController : MonoBehaviour
 
     private void JumpHandler()
     {
-        /* Jump is set false in OnTriggerEnter2d(...)*/
+        /* Jump is set false in OnCollisionEnter2d(...)*/
         if (Input.GetKeyDown(KeyCode.Space) && isOnGround())
         {
             animator.SetBool("Jump", true);
         }
     }
 
-    void OnTriggerEnter2D(Collider2D collider)
+    void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collider.gameObject.tag == "Ground")
+        if (collision.gameObject.tag == "Ground")
         {
             animator.SetBool("Jump", false);
         }
@@ -79,12 +78,5 @@ public class AnimationController : MonoBehaviour
     {
         idleCollider.enabled = true;
         slideCollider.enabled = false;
-    }
-
-    private bool isOnGround()
-    {
-        RaycastHit2D hit = Physics2D.Raycast(transform.position, Vector2.down, 1.3f, layerMask);
-        Debug.DrawRay(transform.position, Vector2.down * 1.3f);
-        return hit.collider != null;
-    }
+    } 
 }
