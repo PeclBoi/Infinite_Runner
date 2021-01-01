@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class FollowPlayer : MonoBehaviour
 {
-    [SerializeField] int offset;
+    [SerializeField] int offsetX;
+    [SerializeField] int offsetY;
     Transform playerTransform;
     // Start is called before the first frame update
     void Start()
@@ -16,9 +17,8 @@ public class FollowPlayer : MonoBehaviour
     void Update()
     {
         Vector3 temp = transform.position;
-
-        temp.x = playerTransform.position.x - offset;
-
+        temp.x = playerTransform.position.x - offsetX;
+        temp.y = playerTransform.position.y - offsetY;
         transform.position = temp;
 
     }
