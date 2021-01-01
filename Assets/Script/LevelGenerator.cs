@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Runtime;
 using UnityEngine;
 
 public class LevelGenerator : MonoBehaviour
@@ -20,9 +21,9 @@ public class LevelGenerator : MonoBehaviour
     private void Update()
     {
         GameObject player = GameObject.FindGameObjectWithTag("Player");
-        if(Vector3.Distance(player.transform.position, lastEndPosition) < PLAYER_DISTANCE_SPAWN_LEVEL_PART)
+        //TODO Delete older Parts
+        if (Vector3.Distance(player.transform.position, lastEndPosition) < PLAYER_DISTANCE_SPAWN_LEVEL_PART)
         {
-            //spawn another Level Part
             SpawnLevelPart();
             SpawnLevelPart();
             SpawnLevelPart();
@@ -36,7 +37,7 @@ public class LevelGenerator : MonoBehaviour
     }
     private Transform SpawnLevelPart(Vector3 spawnPosition)
     {
-        Transform levelPartTransform = Instantiate(courseParts[1], spawnPosition, Quaternion.identity);
+        Transform levelPartTransform = Instantiate(courseParts[Random.Range(0, courseParts.Length)], spawnPosition, Quaternion.identity);
         return levelPartTransform;
     }
 }
