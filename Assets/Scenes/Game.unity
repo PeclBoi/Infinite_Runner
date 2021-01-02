@@ -358,12 +358,16 @@ PrefabInstance:
       value: -7
       objectReference: {fileID: 0}
     - target: {fileID: 886863370252892701, guid: 6fc3aa56b54203c4298271199ebe0c25, type: 3}
+      propertyPath: followY
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 886863370252892701, guid: 6fc3aa56b54203c4298271199ebe0c25, type: 3}
       propertyPath: offsetX
       value: -7
       objectReference: {fileID: 0}
     - target: {fileID: 886863370252892701, guid: 6fc3aa56b54203c4298271199ebe0c25, type: 3}
       propertyPath: offsetY
-      value: 1
+      value: -3
       objectReference: {fileID: 0}
     - target: {fileID: 886863370252892703, guid: 6fc3aa56b54203c4298271199ebe0c25, type: 3}
       propertyPath: m_Name
