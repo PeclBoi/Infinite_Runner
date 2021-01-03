@@ -56,6 +56,10 @@ public class Movement : CollisionMannager
             rigidbody2d.velocity += Vector2.up * Physics2D.gravity.y * 4.5f * Time.deltaTime;
         }
     }
+    public void PointerDownJump()
+    {
+        Jump();
+    }
 
     
 }

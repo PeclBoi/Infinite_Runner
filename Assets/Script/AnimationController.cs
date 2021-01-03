@@ -10,10 +10,10 @@ public class AnimationController : CollisionMannager
     [SerializeField] public Animator animator;
     [SerializeField] private BoxCollider2D idleCollider;
     [SerializeField] private BoxCollider2D slideCollider;
-
+    bool onClick = false;
     void Start()
     {
-        SetHitboxForRunning();
+        SetHitboxForRunning();   
     }
 
     void Update()
@@ -47,8 +47,9 @@ public class AnimationController : CollisionMannager
 
     private void SlideHandler()
     {
-        if (Input.GetKeyDown(KeyCode.Y) && isOnGround())
+        if ((Input.GetKeyDown(KeyCode.Y)|| onClick==true) && isOnGround())
         {
+            onClick = false;
             if (animator.GetBool("Slide") == false)
             {
                 timeSlided = 0f;
@@ -78,5 +79,9 @@ public class AnimationController : CollisionMannager
     {
         idleCollider.enabled = true;
         slideCollider.enabled = false;
-    } 
+    }
+    public void PointerDownSlide() 
+    {
+        onClick = true;
+    }
 }
