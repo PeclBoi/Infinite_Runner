@@ -300,7 +300,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1569847707}
         m_TargetAssemblyTypeName: Movement, Assembly-CSharp
-        m_MethodName: Jump
+        m_MethodName: Jumpbtnclicked
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1037,7 +1037,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: f02a4a936c9606440b059eda7ce4bd30, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 30da8a73922616d4ca111b583182254d, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1406,7 +1406,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: f02a4a936c9606440b059eda7ce4bd30, type: 3}
+  m_Sprite: {fileID: 21300000, guid: ba8a7e37d7a6180429b70e6a98ea28ac, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
