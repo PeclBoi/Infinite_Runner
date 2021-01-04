@@ -7,6 +7,7 @@ public class ScoreScript : MonoBehaviour
 {
     public static float scoreValue = 0;
     Text score;
+    Pause pause;
     
 
     void Start()
@@ -17,7 +18,10 @@ public class ScoreScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        score.text = "Score:" + scoreValue;
-        scoreValue=scoreValue+1;
+        if (Pause.isPaused != true)
+        {
+            score.text = "Score:" + scoreValue;
+            scoreValue = scoreValue + 1;
+        }
     }
 }
