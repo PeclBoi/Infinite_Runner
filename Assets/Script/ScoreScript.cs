@@ -19,7 +19,7 @@ public class ScoreScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Pause.isPaused != true)
+        if (Pause.isPaused != true && PlayerDeath.playerDead != true)
         {
             score.text = "Score:" + scoreValue;
             scoreValue = scoreValue + 1;
