@@ -277,7 +277,11 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 256
   pointer: {fileID: 0}
+<<<<<<< HEAD
   projectilePrefap: {fileID: 6098107018936794320, guid: 2173ca7458d06ac4491c7429a3758fc8, type: 3}
+=======
+  projectilePrefap: {fileID: 0}
+>>>>>>> origin/master
   projectileSpeed: 50
 --- !u!1 &7160250375745325364
 GameObject:
