@@ -879,6 +879,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1001777565}
   m_CullTransparentMesh: 0
+--- !u!1 &1099044565 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6783319880541658750, guid: 52719c7df03bcd048b6abada70b4762b, type: 3}
+  m_PrefabInstance: {fileID: 6783319878892470208}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1153356171
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1661,7 +1666,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7160250375745325360, guid: be2ed16a0e083294c97d14ea98d6e541, type: 3}
       propertyPath: speed
-      value: 15
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 7160250375745325361, guid: be2ed16a0e083294c97d14ea98d6e541, type: 3}
       propertyPath: m_RootOrder
@@ -1714,7 +1719,7 @@ PrefabInstance:
     - target: {fileID: 7823220747249977941, guid: be2ed16a0e083294c97d14ea98d6e541, type: 3}
       propertyPath: pointer
       value: 
-      objectReference: {fileID: 6783319880541658750, guid: 52719c7df03bcd048b6abada70b4762b, type: 3}
+      objectReference: {fileID: 1099044565}
     - target: {fileID: 7823220747249977941, guid: be2ed16a0e083294c97d14ea98d6e541, type: 3}
       propertyPath: projectile
       value: 
