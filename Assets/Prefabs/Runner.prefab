@@ -276,6 +276,9 @@ MonoBehaviour:
   layer:
     serializedVersion: 2
     m_Bits: 256
+  pointer: {fileID: 0}
+  projectilePrefap: {fileID: 0}
+  projectileSpeed: 50
 --- !u!1 &7160250375745325364
 GameObject:
   m_ObjectHideFlags: 0
