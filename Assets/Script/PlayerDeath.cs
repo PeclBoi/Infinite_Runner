@@ -14,6 +14,7 @@ public class PlayerDeath : MonoBehaviour
     public GameObject SlideButton;
     public GameObject PauseButton;
 
+
     public void Start()
     {
         DeathScreenCanvas.SetActive(false);
@@ -21,14 +22,17 @@ public class PlayerDeath : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D collider)
     {
-        Debug.Log("Trigger");
-        DeathScreenCanvas.SetActive(true);
-        JumpButton.SetActive(false);
-        ScoreText.SetActive(false);
-        SlideButton.SetActive(false);
-        PauseButton.SetActive(false);
-        Time.timeScale = 0f;
-        playerDead = true;
-        Text.text += ScoreScript.scoreValue;
+        Debug.Log("Trigger " + collider.gameObject.name + ";" + collider.gameObject.tag);
+        if (collider.gameObject.tag != "Projectile")
+        {
+            DeathScreenCanvas.SetActive(true);
+            JumpButton.SetActive(false);
+            ScoreText.SetActive(false);
+            SlideButton.SetActive(false);
+            PauseButton.SetActive(false);
+            Time.timeScale = 0f;
+            playerDead = true;
+            Text.text += ScoreScript.scoreValue;
+        }
     }
 }
