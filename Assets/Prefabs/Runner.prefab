@@ -217,7 +217,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.0075876266, y: -0.3737766}
+  m_Offset: {x: -0.050200913, y: -0.3737766}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -228,7 +228,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.60544074, y: 0.0044739246}
+  m_Size: {x: 0.10160165, y: 0.0044739246}
   m_EdgeRadius: 0
 --- !u!1 &379885507342723484
 GameObject:
@@ -255,7 +255,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 379885507342723484}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.053, y: 0.203, z: 0}
+  m_LocalPosition: {x: 0.15, y: 0.24, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 7160250375745325361}
@@ -276,6 +276,9 @@ MonoBehaviour:
   layer:
     serializedVersion: 2
     m_Bits: 256
+  pointer: {fileID: 0}
+  projectilePrefap: {fileID: 6098107018936794320, guid: 2173ca7458d06ac4491c7429a3758fc8, type: 3}
+  projectileSpeed: 50
 --- !u!1 &7160250375745325364
 GameObject:
   m_ObjectHideFlags: 0
@@ -432,7 +435,7 @@ MonoBehaviour:
   layerMask:
     serializedVersion: 2
     m_Bits: 256
-  speed: 0
+  speed: 10
   jumpVelocity: 550
 --- !u!114 &400915181
 MonoBehaviour:
