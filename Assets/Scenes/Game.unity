@@ -1013,11 +1013,11 @@ SpriteRenderer:
   m_SortingLayerID: -1580741661
   m_SortingLayer: -1
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: b833c87e7242db24f965d883039b9ee8, type: 3}
+  m_Sprite: {fileID: 21300000, guid: e31edd2a034d81c49bd10e328799a498, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
-  m_DrawMode: 2
+  m_DrawMode: 0
   m_Size: {x: 62.147156, y: 7.5420203}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 1
@@ -1032,8 +1032,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 765658942}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 50.2, y: 0.012, z: 0}
-  m_LocalScale: {x: 1, y: 1.9031249, z: 1}
+  m_LocalPosition: {x: 50.12, y: 1.68, z: 0}
+  m_LocalScale: {x: 12.429431, y: 7.1767035, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 4
@@ -1546,7 +1546,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c10d6575da031754a9465e2bc8bb9c99, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  DeathScreenCanvas: {fileID: 1032818678}
 --- !u!114 &1032818681
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3431,3 +3430,60 @@ PrefabInstance:
       objectReference: {fileID: 6098107018936794320, guid: 2173ca7458d06ac4491c7429a3758fc8, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: be2ed16a0e083294c97d14ea98d6e541, type: 3}
+--- !u!1001 &8597243554649846488
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 5774042243285828871, guid: 86bb47d85978218428a76372c4c33869, type: 3}
+      propertyPath: m_RootOrder
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 5774042243285828871, guid: 86bb47d85978218428a76372c4c33869, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 19.23
+      objectReference: {fileID: 0}
+    - target: {fileID: 5774042243285828871, guid: 86bb47d85978218428a76372c4c33869, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -3.76
+      objectReference: {fileID: 0}
+    - target: {fileID: 5774042243285828871, guid: 86bb47d85978218428a76372c4c33869, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5774042243285828871, guid: 86bb47d85978218428a76372c4c33869, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5774042243285828871, guid: 86bb47d85978218428a76372c4c33869, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5774042243285828871, guid: 86bb47d85978218428a76372c4c33869, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5774042243285828871, guid: 86bb47d85978218428a76372c4c33869, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5774042243285828871, guid: 86bb47d85978218428a76372c4c33869, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5774042243285828871, guid: 86bb47d85978218428a76372c4c33869, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5774042243285828871, guid: 86bb47d85978218428a76372c4c33869, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7888755375613835911, guid: 86bb47d85978218428a76372c4c33869, type: 3}
+      propertyPath: m_Name
+      value: vendingmachine
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 86bb47d85978218428a76372c4c33869, type: 3}
