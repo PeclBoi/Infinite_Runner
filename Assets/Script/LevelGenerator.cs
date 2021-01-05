@@ -38,7 +38,7 @@ public class LevelGenerator : MonoBehaviour
     private Transform SpawnLevelPart(Vector3 spawnPosition)
     {
         Transform levelPartTransform = Instantiate(courseParts[Random.Range(0, courseParts.Length)], spawnPosition, Quaternion.identity);
-        Destroy(levelPartTransform.gameObject, 20);
+        Destroy(levelPartTransform.gameObject, 50);
         return levelPartTransform;
     }
 }

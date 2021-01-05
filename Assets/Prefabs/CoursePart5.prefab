@@ -47,7 +47,7 @@ GameObject:
   - component: {fileID: 1719764965550992240}
   - component: {fileID: 440085269004509585}
   - component: {fileID: 642105579881042521}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: flyingplat_0 (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -206,7 +206,7 @@ GameObject:
   - component: {fileID: 3473841661309253362}
   - component: {fileID: 3477195242925521529}
   - component: {fileID: 1868258805707926357}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: flyingplat_0 (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -335,7 +335,7 @@ GameObject:
   - component: {fileID: 5423729970765909382}
   - component: {fileID: 727136359787453656}
   - component: {fileID: 4675780322117326986}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: flyingplat_0 (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -464,7 +464,7 @@ GameObject:
   - component: {fileID: 4989915740705232540}
   - component: {fileID: 7410383573049267690}
   - component: {fileID: 3464906168663525413}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: flyingplat_0 (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}

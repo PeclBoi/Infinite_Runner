@@ -3485,5 +3485,9 @@ PrefabInstance:
       propertyPath: m_Name
       value: vendingmachine
       objectReference: {fileID: 0}
+    - target: {fileID: 7888755375613835911, guid: 86bb47d85978218428a76372c4c33869, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 86bb47d85978218428a76372c4c33869, type: 3}
