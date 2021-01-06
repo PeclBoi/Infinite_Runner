@@ -1,4 +1,5 @@
 ﻿using System.Collections;
+using System;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
@@ -33,6 +34,7 @@ public class PlayerDeath : MonoBehaviour
             Time.timeScale = 0f;
             playerDead = true;
             Text.text += ScoreScript.scoreValue;
+            Scoreboard.AddHighscoreEntry(Convert.ToInt32(ScoreScript.scoreValue));
         }
     }
 }
