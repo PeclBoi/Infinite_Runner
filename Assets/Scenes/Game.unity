@@ -953,7 +953,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &765658942
 GameObject:
@@ -1036,7 +1036,7 @@ Transform:
   m_LocalScale: {x: 12.429431, y: 7.1767035, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!95 &765658945
 Animator:
@@ -1546,6 +1546,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c10d6575da031754a9465e2bc8bb9c99, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  DeathScreenCanvas: {fileID: 1032818678}
 --- !u!114 &1032818681
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2138,7 +2139,7 @@ RectTransform:
   - {fileID: 319917451}
   - {fileID: 1032818679}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -2190,7 +2191,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1562543062
 GameObject:
@@ -2678,7 +2679,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1709836585
 GameObject:
@@ -2760,7 +2761,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1762389840
 GameObject:
@@ -3437,6 +3438,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4242332649926988848, guid: 86bb47d85978218428a76372c4c33869, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 4242332649926988848, guid: 86bb47d85978218428a76372c4c33869, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -3.83
+      objectReference: {fileID: 0}
     - target: {fileID: 5774042243285828871, guid: 86bb47d85978218428a76372c4c33869, type: 3}
       propertyPath: m_RootOrder
       value: 9
