@@ -10,6 +10,7 @@ public class HitHandler : MonoBehaviour
         {
             Destroy(collision.collider.gameObject);
             Destroy(gameObject);
+            ScoreScript.scoreValue += 100000;
         } 
     }
 }
