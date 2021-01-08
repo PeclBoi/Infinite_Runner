@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 7673966000336184178}
   - component: {fileID: 3780280491636628854}
   - component: {fileID: 3753594579566860367}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: stair
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -116,7 +116,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3542207688859917102}
   - component: {fileID: 597556299086307304}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: ShopBack
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -307,7 +307,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4716727803226662718}
   - component: {fileID: 3736878558576118023}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Shop
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -368,7 +368,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6749845835702030913}
   - component: {fileID: 5714239242624027320}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: ShopFront
   m_TagString: Ground
   m_Icon: {fileID: 0}

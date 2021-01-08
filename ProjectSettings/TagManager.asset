@@ -48,3 +48,12 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: ShopBack
+    uniqueID: 1122718385
+    locked: 0
+  - name: Player
+    uniqueID: 1955107987
+    locked: 0
+  - name: ShopFront
+    uniqueID: 4034839481
+    locked: 0
