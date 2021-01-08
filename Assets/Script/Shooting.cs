@@ -11,10 +11,12 @@ public class Shooting : MonoBehaviour
     [SerializeField] private GameObject projectilePrefap;
     [SerializeField] private float projectileSpeed = 50f;
     private Vector3 mousePosition;
+    private GameObject bulletSpawn;
 
     private void Start()
     {
         //Cursor.visible = false;
+        bulletSpawn = GameObject.Find("Gun");
     }
 
 
@@ -24,37 +26,38 @@ public class Shooting : MonoBehaviour
         pointer.transform.position = (Vector2)mousePosition;
     }
 
-    void Update()
+    private void OnMouseDown()
     {
-        mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-
-        Vector3 aimDirection = CalculateAimDirection();
-        CalculateAndSetAngleZForAimDirection(aimDirection);
-        
         if (Input.GetMouseButtonDown(0))
         {
-            FireProjectile(aimDirection);  
+            FireProjectile();
         }
     }
 
+    void Update()
+    {
+        mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+    }
 
     private Vector3 CalculateAimDirection()
     {
-        Vector3 aimDirection = (mousePosition - transform.position).normalized;
-        return aimDirection; 
+        Vector3 difference = mousePosition - bulletSpawn.transform.position;
+        float distance = difference.magnitude;
+        Vector2 direction = difference / distance;
+        return direction.normalized;
     }
 
-     private void CalculateAndSetAngleZForAimDirection(Vector3 aimDirection)
-     {
-         float angle = Mathf.Atan2(aimDirection.y, aimDirection.x) * Mathf.Rad2Deg;
-         transform.eulerAngles = new Vector3(0, 0, angle);
-     }
+    private float CalculateAngleZForAimDirection(Vector3 aimDirection)
+    {
+        return Mathf.Atan2(aimDirection.y, aimDirection.x) * Mathf.Rad2Deg;
+    }
 
-    private void FireProjectile(Vector3 direction)
+    private void FireProjectile()
     {
         GameObject projectile = Instantiate(projectilePrefap) as GameObject;
-        projectile.transform.position = transform.position;
-        projectile.transform.eulerAngles = transform.eulerAngles;
+        Vector2 direction = CalculateAimDirection();
+        projectile.transform.position = bulletSpawn.transform.position;
+        projectile.transform.eulerAngles = new Vector3(0, 0, CalculateAngleZForAimDirection(direction));
         projectile.GetComponent<Rigidbody2D>().velocity = direction * projectileSpeed;
         Destroy(projectile, 5);
     }

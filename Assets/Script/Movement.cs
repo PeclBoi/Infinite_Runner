@@ -14,11 +14,11 @@ public class Movement : CollisionMannager
 
     [SerializeField] private int speed;
     [SerializeField] private float jumpVelocity = 100f;
-    
-    
+    [SerializeField] private float maxJumpHight = 4;
+
+    static float difficulty = 1;
     private Rigidbody2D rigidbody2d;
     private float JumpHight;
-    private float maxJumpHight = 3;
     private bool click = false;
 
     void Start()
@@ -42,7 +42,7 @@ public class Movement : CollisionMannager
         }
         else if (isOnGround())
         {
-            rigidbody2d.velocity = new Vector2(speed, 0);
+            rigidbody2d.velocity = new Vector2(speed * difficulty, 0);
         }
         click = false;
         AttenuateJumpAtMaxHight();
@@ -66,6 +66,11 @@ public class Movement : CollisionMannager
     {
         click = true;
         CheckMovement();
+    }
+
+    public static void SetDifficulty(float speedMultiplier)
+    {
+        difficulty = speedMultiplier;
     }
     
 }

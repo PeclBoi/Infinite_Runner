@@ -118,6 +118,7 @@ public class HighScores
     {
         highscores.Add(highscore);
         SortHighScores();
+        RegulateLength();
     }
     /// <summary>
     /// Sorts the HighScore entries.
@@ -135,6 +136,14 @@ public class HighScores
                     highscores[j] = tmp;
                 }
             }
+        }
+    }
+    
+    private void RegulateLength()
+    {
+        if(highscores.Count > 5)
+        {
+            highscores.RemoveRange(5, highscores.Count - 5);
         }
     }
 }

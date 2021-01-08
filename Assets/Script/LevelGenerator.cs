@@ -21,12 +21,9 @@ public class LevelGenerator : MonoBehaviour
     private void Update()
     {
         GameObject player = GameObject.FindGameObjectWithTag("Player");
-        //TODO Delete older Parts
         if (Vector3.Distance(player.transform.position, lastEndPosition) < PLAYER_DISTANCE_SPAWN_LEVEL_PART)
         {
-            SpawnLevelPart();
-            SpawnLevelPart();
-            SpawnLevelPart();
+            SpawnLevelPart();           
         }
     }
 

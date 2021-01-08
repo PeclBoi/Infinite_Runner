@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &3842605709976485502
+--- !u!1 &6004522554503509523
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,37 +8,38 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 3842605709976485501}
-  - component: {fileID: 3842605709976485500}
-  - component: {fileID: 3842605709976485503}
+  - component: {fileID: 2072683924883588659}
+  - component: {fileID: 6191028892807447402}
+  - component: {fileID: 5937264717565024914}
+  - component: {fileID: 2982029748120092847}
   m_Layer: 8
-  m_Name: kiste
-  m_TagString: Ground
+  m_Name: Car
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &3842605709976485501
+--- !u!4 &2072683924883588659
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3842605709976485502}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.06, y: -4.79, z: 0}
-  m_LocalScale: {x: 0.69757843, y: 0.69757843, z: 0.69757843}
+  m_GameObject: {fileID: 6004522554503509523}
+  m_LocalRotation: {x: 0, y: 0, z: -0.1645225, w: 0.98637336}
+  m_LocalPosition: {x: 46.36, y: 1.89, z: 0}
+  m_LocalScale: {x: 7.8498, y: 6.8816843, z: 7.8498}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!212 &3842605709976485500
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -18.939}
+--- !u!212 &6191028892807447402
 SpriteRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3842605709976485502}
+  m_GameObject: {fileID: 6004522554503509523}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
@@ -72,40 +73,66 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: e922b371e162a7d41ad987a4eb3231d6, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 16494f8c64951b140bf5413be4578340, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 4.49, y: 2.91}
+  m_Size: {x: 0.97, y: 0.37}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!61 &3842605709976485503
+--- !u!61 &5937264717565024914
 BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3842605709976485502}
+  m_GameObject: {fileID: 6004522554503509523}
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.06731439, y: -0.037397385}
+  m_Offset: {x: -0.22361141, y: 0.00051409006}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 4.49, y: 2.91}
-    newSize: {x: 4.49, y: 2.91}
+    oldSize: {x: 0.97, y: 0.37}
+    newSize: {x: 0.97, y: 0.37}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 4.235701, y: 2.8352056}
+  m_Size: {x: 0.47173727, y: 0.254942}
+  m_EdgeRadius: 0
+--- !u!61 &2982029748120092847
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6004522554503509523}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.22166766, y: -0.0475567}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.97, y: 0.37}
+    newSize: {x: 0.97, y: 0.37}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.42293927, y: 0.16684914}
   m_EdgeRadius: 0
