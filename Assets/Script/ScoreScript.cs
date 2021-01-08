@@ -6,14 +6,16 @@ using UnityEngine.UI;
 public class ScoreScript : MonoBehaviour
 {
     public static float scoreValue = 0;
+    private float secTillPoint = 0.5f;
+    private float deltaTimeCounter = 0;
     Text score;
     Pause pause;
-    
+
 
     void Start()
     {
-        score = GetComponent<Text> ();
-        scoreValue = 0;
+        score = GetComponent<Text>();
+        scoreValue = 100;
     }
 
     // Update is called once per frame
@@ -21,8 +23,32 @@ public class ScoreScript : MonoBehaviour
     {
         if (Pause.isPaused != true && PlayerDeath.playerDead != true)
         {
-            score.text = "Score:" + scoreValue;
-            scoreValue = scoreValue + 1;
+            deltaTimeCounter += Time.deltaTime;
+            if (deltaTimeCounter >= secTillPoint)
+            {
+                deltaTimeCounter = 0;
+                score.text = "Score:" + scoreValue;
+                scoreValue += 1;
+            }
         }
+
+        if(scoreValue > GetTimeValue(3, secTillPoint))
+        {
+            Movement.SetDifficulty(2);
+        }else if(scoreValue > GetTimeValue(2, secTillPoint))
+        {
+            Movement.SetDifficulty(1.5f);
+        }
+        else if (scoreValue > GetTimeValue(1, secTillPoint))
+        {
+            print("harder");
+            Movement.SetDifficulty(1.25f);
+        }
+
+    }
+
+    private float GetTimeValue(float min, float timeScale)
+    {
+        return (min * 60) / timeScale;
     }
 }

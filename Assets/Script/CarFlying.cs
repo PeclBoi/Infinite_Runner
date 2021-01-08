@@ -15,6 +15,6 @@ public class CarFlying : MonoBehaviour
 
     void Update()
     {
-        GetComponent<Rigidbody2D>().AddForce(Vector2.left * speed * Time.deltaTime);
+        GetComponent<Rigidbody2D>().velocity = Vector2.left * new Vector2(speed, 0);
     }
 }
