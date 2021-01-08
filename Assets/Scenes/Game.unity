@@ -3428,10 +3428,6 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 274490080}
     - target: {fileID: 328580652, guid: be2ed16a0e083294c97d14ea98d6e541, type: 3}
-      propertyPath: CrouchButton
-      value: 
-      objectReference: {fileID: 274490082}
-    - target: {fileID: 328580652, guid: be2ed16a0e083294c97d14ea98d6e541, type: 3}
       propertyPath: DeathScreenCanvas
       value: 
       objectReference: {fileID: 1032818678}
@@ -3456,33 +3452,13 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 274490080}
     - target: {fileID: 741365288, guid: be2ed16a0e083294c97d14ea98d6e541, type: 3}
-      propertyPath: CrouchButton
-      value: 
-      objectReference: {fileID: 274490082}
-    - target: {fileID: 741365288, guid: be2ed16a0e083294c97d14ea98d6e541, type: 3}
       propertyPath: DeathScreenCanvas
       value: 
       objectReference: {fileID: 1032818678}
-    - target: {fileID: 2094070498, guid: be2ed16a0e083294c97d14ea98d6e541, type: 3}
-      propertyPath: m_Size.x
-      value: 0.10160165
-      objectReference: {fileID: 0}
-    - target: {fileID: 2094070498, guid: be2ed16a0e083294c97d14ea98d6e541, type: 3}
-      propertyPath: m_Offset.x
-      value: -0.050200913
-      objectReference: {fileID: 0}
-    - target: {fileID: 1413668465646194158, guid: be2ed16a0e083294c97d14ea98d6e541, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0.15
-      objectReference: {fileID: 0}
-    - target: {fileID: 1413668465646194158, guid: be2ed16a0e083294c97d14ea98d6e541, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.24
-      objectReference: {fileID: 0}
-    - target: {fileID: 7160250375745325360, guid: be2ed16a0e083294c97d14ea98d6e541, type: 3}
-      propertyPath: speed
-      value: 10
-      objectReference: {fileID: 0}
+    - target: {fileID: 1969318937, guid: be2ed16a0e083294c97d14ea98d6e541, type: 3}
+      propertyPath: pointer
+      value: 
+      objectReference: {fileID: 761491711}
     - target: {fileID: 7160250375745325361, guid: be2ed16a0e083294c97d14ea98d6e541, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -3531,17 +3507,5 @@ PrefabInstance:
       propertyPath: m_Name
       value: Runner
       objectReference: {fileID: 0}
-    - target: {fileID: 7823220747249977941, guid: be2ed16a0e083294c97d14ea98d6e541, type: 3}
-      propertyPath: pointer
-      value: 
-      objectReference: {fileID: 761491711}
-    - target: {fileID: 7823220747249977941, guid: be2ed16a0e083294c97d14ea98d6e541, type: 3}
-      propertyPath: projectile
-      value: 
-      objectReference: {fileID: 6098107018936794320, guid: 2173ca7458d06ac4491c7429a3758fc8, type: 3}
-    - target: {fileID: 7823220747249977941, guid: be2ed16a0e083294c97d14ea98d6e541, type: 3}
-      propertyPath: projectilePrefap
-      value: 
-      objectReference: {fileID: 6098107018936794320, guid: 2173ca7458d06ac4491c7429a3758fc8, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: be2ed16a0e083294c97d14ea98d6e541, type: 3}
