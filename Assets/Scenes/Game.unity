@@ -3346,6 +3346,22 @@ PrefabInstance:
       propertyPath: DeathScreenCanvas
       value: 
       objectReference: {fileID: 1032818678}
+    - target: {fileID: 1969318936, guid: be2ed16a0e083294c97d14ea98d6e541, type: 3}
+      propertyPath: m_Size.x
+      value: 9.835671
+      objectReference: {fileID: 0}
+    - target: {fileID: 1969318936, guid: be2ed16a0e083294c97d14ea98d6e541, type: 3}
+      propertyPath: m_Size.y
+      value: 7.6941442
+      objectReference: {fileID: 0}
+    - target: {fileID: 1969318936, guid: be2ed16a0e083294c97d14ea98d6e541, type: 3}
+      propertyPath: m_Center.x
+      value: 4.417839
+      objectReference: {fileID: 0}
+    - target: {fileID: 1969318936, guid: be2ed16a0e083294c97d14ea98d6e541, type: 3}
+      propertyPath: m_Center.y
+      value: 0.4164312
+      objectReference: {fileID: 0}
     - target: {fileID: 1969318937, guid: be2ed16a0e083294c97d14ea98d6e541, type: 3}
       propertyPath: pointer
       value: 
