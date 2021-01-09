@@ -15,7 +15,7 @@ public class ScoreScript : MonoBehaviour
     void Start()
     {
         score = GetComponent<Text>();
-        scoreValue = 100;
+        scoreValue = 0;
     }
 
     // Update is called once per frame

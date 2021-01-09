@@ -15,8 +15,7 @@ public class Scoreboard : MonoBehaviour
     /// </summary>
     private void Awake()
     {
-        //scoreboardContainer = transform.Find("ScoreboardContainer");
-        //scoreboardEntryTempalte = transform.Find("ScoreboardEntryTempalte");
+        
 
         scoreboardEntryTempalte.gameObject.SetActive(false);
 
