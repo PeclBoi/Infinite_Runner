@@ -58,7 +58,7 @@ public class Movement : CollisionMannager
     {
         if (rigidbody2d.velocity.y < 0 || transform.position.y - JumpHight > maxJumpHight)
         {
-            rigidbody2d.velocity += Vector2.up * Physics2D.gravity.y * 4.5f * Time.deltaTime;
+            rigidbody2d.velocity += Vector2.up * Physics2D.gravity.y * 4.5f * difficulty * Time.deltaTime;
         }
     }
     
