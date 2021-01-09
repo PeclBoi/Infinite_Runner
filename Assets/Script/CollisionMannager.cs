@@ -12,7 +12,7 @@ public class CollisionMannager : MonoBehaviour
 
     public bool isOnGround()
     {
-        RaycastHit2D hit = Physics2D.Raycast(transform.position, Vector2.down, 1.3f, layerMask);
+        RaycastHit2D hit = Physics2D.Raycast(transform.position, Vector2.down, 1.4f, layerMask);
         return hit.collider != null;
     }
 }
