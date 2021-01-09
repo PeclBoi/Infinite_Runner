@@ -14,10 +14,11 @@ public class enemydeath : MonoBehaviour
     }
 
     // Update is called once per frame
-    void OnCollisiontEnter(Collision other)
+    void OnCollisiontEnter2D(Collision other)
     {
           if(other.gameObject.tag == "Projectile")
         {
+            ScoreScript.scoreValue += 1000000;
             Debug.Log("hit");
             Destroy(enemy);
         }
