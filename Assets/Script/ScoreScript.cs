@@ -34,15 +34,15 @@ public class ScoreScript : MonoBehaviour
 
         if(scoreValue > GetTimeValue(3, secTillPoint))
         {
-            Movement.SetDifficulty(2);
-        }else if(scoreValue > GetTimeValue(2, secTillPoint))
+            Movement.SetDifficulty(1.3f);
+        }
+        else if(scoreValue > GetTimeValue(2, secTillPoint))
         {
-            Movement.SetDifficulty(1.5f);
+            Movement.SetDifficulty(1.2f);
         }
         else if (scoreValue > GetTimeValue(1, secTillPoint))
         {
-            print("harder");
-            Movement.SetDifficulty(1.25f);
+            Movement.SetDifficulty(1.1f);
         }
 
     }
