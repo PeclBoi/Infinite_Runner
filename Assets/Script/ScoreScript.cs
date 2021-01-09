@@ -40,9 +40,6 @@ public class ScoreScript : MonoBehaviour
         {
             Movement.SetDifficulty(1.2f);
         }
-<<<<<<< HEAD
-        
-=======
         else if (scoreValue > GetTimeValue(1, secTillPoint))
         {
             Movement.SetDifficulty(1.1f);
@@ -53,6 +50,5 @@ public class ScoreScript : MonoBehaviour
     private float GetTimeValue(float min, float timeScale)
     {
         return (min * 60) / timeScale;
->>>>>>> 8219b15b32d3c6b5ce3725d17a8518b2846805b0
     }
 }
