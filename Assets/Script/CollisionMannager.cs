@@ -7,7 +7,7 @@ using UnityEngine;
 
 public class CollisionMannager : MonoBehaviour 
 {
-
+    
     [SerializeField] private LayerMask layerMask;
 
     public bool isOnGround()
