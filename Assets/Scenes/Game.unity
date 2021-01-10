@@ -801,7 +801,7 @@ MonoBehaviour:
         m_Calls:
         - m_Target: {fileID: 1569847709}
           m_TargetAssemblyTypeName: AnimationController, Assembly-CSharp
-          m_MethodName: PointerDownSlide
+          m_MethodName: SlideBtnHandler
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
