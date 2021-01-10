@@ -50,7 +50,6 @@ public class AnimationController : CollisionMannager
     {
         if (Input.GetKeyDown(KeyCode.Y) && isOnGround())
         {
-            onClick = false;
             if (animator.GetBool("Slide") == false)
             {
                 timeSlided = 0f;
@@ -70,6 +69,10 @@ public class AnimationController : CollisionMannager
         }
     }
 
+    public void SlideBtnHandler()
+    {
+        animator.SetBool("Slide", true);
+    }
     public void JumpBtnHandler()
     {
         if (isOnGround())
