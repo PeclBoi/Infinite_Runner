@@ -71,7 +71,25 @@ public class AnimationController : CollisionMannager
 
     public void SlideBtnHandler()
     {
-        animator.SetBool("Slide", true);
+        if (isOnGround())
+        {
+            if (animator.GetBool("Slide") == false)
+            {
+                timeSlided = 0f;
+                animator.SetBool("Slide", true);
+            }
+            SetHitboxForSlide();
+        }
+
+        if (animator.GetBool("Slide") == true)
+        {
+            timeSlided += Time.deltaTime;
+            if (timeSlided > slideTime)
+            {
+                animator.SetBool("Slide", false);
+                SetHitboxForRunning();
+            }
+        }
     }
     public void JumpBtnHandler()
     {

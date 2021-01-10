@@ -15,7 +15,6 @@ public class Scoreboard : MonoBehaviour
     /// </summary>
     private void Awake()
     {
-        
 
         scoreboardEntryTempalte.gameObject.SetActive(false);
 

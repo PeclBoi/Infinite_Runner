@@ -640,7 +640,7 @@ MonoBehaviour:
         m_Calls:
         - m_Target: {fileID: 1569847707}
           m_TargetAssemblyTypeName: Movement, Assembly-CSharp
-          m_MethodName: Jump
+          m_MethodName: JumpWithButton
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -1901,8 +1901,8 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
-  m_PlayOnAwake: 1
+  m_audioClip: {fileID: 8300000, guid: 829a4f216e9ffd44e92958e088d92038, type: 3}
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
