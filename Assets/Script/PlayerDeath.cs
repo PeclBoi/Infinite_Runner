@@ -7,6 +7,7 @@ using UnityEngine.UI;
 
 public class PlayerDeath : MonoBehaviour
 {
+    [SerializeField] AudioClip deathSound;
     public static bool playerDead = false;
     public GameObject DeathScreenCanvas;
     public TextMeshProUGUI Text;
@@ -26,6 +27,7 @@ public class PlayerDeath : MonoBehaviour
         Debug.Log("Trigger " + collider.gameObject.name + ";" + collider.gameObject.tag);
         if (collider.gameObject.tag != "Projectile")
         {
+            GameObject.Find("Sound").GetComponent<AudioSource>().PlayOneShot(deathSound);
             DeathScreenCanvas.SetActive(true);
             JumpButton.SetActive(false);
             ScoreText.SetActive(false);

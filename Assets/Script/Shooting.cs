@@ -10,6 +10,7 @@ public class Shooting : MonoBehaviour
     [SerializeField] private GameObject pointer;
     [SerializeField] private GameObject projectilePrefap;
     [SerializeField] private float projectileSpeed = 50f;
+    [SerializeField] private AudioClip shootSound;
     private Vector3 mousePosition;
     private GameObject bulletSpawn;
 
@@ -54,6 +55,8 @@ public class Shooting : MonoBehaviour
 
     private void FireProjectile()
     {
+        GameObject.Find("Sound").GetComponent<AudioSource>().PlayOneShot(shootSound);
+
         GameObject projectile = Instantiate(projectilePrefap) as GameObject;
         Vector2 direction = CalculateAimDirection();
         projectile.transform.position = bulletSpawn.transform.position;

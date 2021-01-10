@@ -6,12 +6,6 @@ using UnityEngine.UI;
 
 public class Movement : CollisionMannager
 {
-    enum CostumInput
-    {
-        Jump = KeyCode.Space,
-        Slide = KeyCode.S
-    }
-
     [SerializeField] private int speed;
     [SerializeField] private float jumpVelocity = 100f;
     [SerializeField] private float maxJumpHight = 4;

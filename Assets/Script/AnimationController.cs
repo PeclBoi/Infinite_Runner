@@ -11,6 +11,7 @@ public class AnimationController : CollisionMannager
     [SerializeField] private BoxCollider2D idleCollider;
     [SerializeField] private BoxCollider2D slideCollider;
     bool onClick = false;
+
     void Start()
     {
         SetHitboxForRunning();   
