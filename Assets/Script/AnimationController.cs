@@ -48,7 +48,7 @@ public class AnimationController : CollisionMannager
 
     private void SlideHandler()
     {
-        if ((Input.GetKeyDown(KeyCode.Y)|| onClick==true) && isOnGround())
+        if (Input.GetKeyDown(KeyCode.Y) && isOnGround())
         {
             onClick = false;
             if (animator.GetBool("Slide") == false)
@@ -70,6 +70,13 @@ public class AnimationController : CollisionMannager
         }
     }
 
+    public void JumpBtnHandler()
+    {
+        if (isOnGround())
+        {
+            animator.SetBool("Jump", true);
+        }
+    }
     private void SetHitboxForSlide()
     {
         idleCollider.enabled = false;
