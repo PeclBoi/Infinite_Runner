@@ -284,7 +284,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: f0f0f8ce81659aa47987c078251b6f22, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.227
+  m_Volume: 1
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -1844,6 +1844,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1066199877}
   m_CullTransparentMesh: 0
+<<<<<<< HEAD
 --- !u!1 &1067553468 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4087592349504760247, guid: be2ed16a0e083294c97d14ea98d6e541, type: 3}
@@ -1851,10 +1852,20 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
 --- !u!82 &1067553470
 AudioSource:
+=======
+--- !u!1 &1125722395 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7160250375745325364, guid: be2ed16a0e083294c97d14ea98d6e541, type: 3}
+  m_PrefabInstance: {fileID: 7160250375350510733}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1125722402
+MonoBehaviour:
+>>>>>>> origin/master
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
   m_GameObject: {fileID: 1067553468}
   m_Enabled: 1
   serializedVersion: 4
@@ -1867,7 +1878,7 @@ AudioSource:
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
-  Priority: 194
+  Priority: 128
   DopplerLevel: 1
   MinDistance: 1
   MaxDistance: 500
@@ -1945,24 +1956,13 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!1 &1125722395 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7160250375745325364, guid: be2ed16a0e083294c97d14ea98d6e541, type: 3}
-  m_PrefabInstance: {fileID: 7160250375350510733}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1125722402
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
+=======
   m_GameObject: {fileID: 1125722395}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4c25c06bbf14149439b7200894e890a9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  deathSound: {fileID: 0}
   DeathScreenCanvas: {fileID: 1032818678}
   Text: {fileID: 1345383634}
   ScoreText: {fileID: 319917450}
@@ -1970,6 +1970,7 @@ MonoBehaviour:
   SlideButton: {fileID: 274490080}
   PauseButton: {fileID: 1001777565}
   runner: {fileID: 1125722395}
+>>>>>>> origin/master
 --- !u!1001 &1153356171
 PrefabInstance:
   m_ObjectHideFlags: 0
