@@ -42,6 +42,16 @@ public class Movement : CollisionMannager
         AttenuateJumpAtMaxHight();
     }
 
+
+    public void JumpWithButton()
+    {
+        if (isOnGround())
+        {
+            Jump();
+        }
+    }
+
+
     public void Jump()
     {
         JumpHight = transform.position.y;
