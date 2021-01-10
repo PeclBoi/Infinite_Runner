@@ -29,7 +29,7 @@ public class Movement : CollisionMannager
 
     private void CheckMovement()
     {
-        bool jumpIsPressedWhileOnGround = (Input.GetKeyDown(KeyCode.Space)|| click==true) && isOnGround();
+        bool jumpIsPressedWhileOnGround = (Input.GetKeyDown(KeyCode.Space) && isOnGround());
         if (jumpIsPressedWhileOnGround)
         {
             Jump();
@@ -42,7 +42,7 @@ public class Movement : CollisionMannager
         AttenuateJumpAtMaxHight();
     }
 
-    private void Jump()
+    public void Jump()
     {
         JumpHight = transform.position.y;
         rigidbody2d.AddForce(new Vector2(0, jumpVelocity));
@@ -56,11 +56,6 @@ public class Movement : CollisionMannager
         }
     }
     
-    public void Jumpbtnclicked()
-    {
-        click = true;
-        CheckMovement();
-    }
 
     public static void SetDifficulty(float speedMultiplier)
     {
