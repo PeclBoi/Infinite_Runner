@@ -55,8 +55,10 @@ public class Shooting : MonoBehaviour
 
     private void FireProjectile()
     {
-        GameObject.Find("Sound").GetComponent<AudioSource>().PlayOneShot(shootSound);
-
+        if (PlayerPrefs.GetInt("sound") == 1)
+        {
+            GameObject.Find("Sound").GetComponent<AudioSource>().PlayOneShot(shootSound);
+        }
         GameObject projectile = Instantiate(projectilePrefap) as GameObject;
         Vector2 direction = CalculateAimDirection();
         projectile.transform.position = bulletSpawn.transform.position;

@@ -10,7 +10,7 @@ public class PlayerDeath : MonoBehaviour
     [SerializeField] AudioClip deathSound;
     public static bool playerDead = false;
     public GameObject DeathScreenCanvas;
-    public TextMeshProUGUI Text;
+    public TextMeshProUGUI Score;
     public GameObject ScoreText;
     public GameObject JumpButton;
     public GameObject SlideButton;
@@ -25,10 +25,10 @@ public class PlayerDeath : MonoBehaviour
     }
     public void Update()
     {
+        
         runner = GameObject.Find("Runner");
         Vector2 worldpos = runner.transform.position;
-        Debug.Log(worldpos);
-        if (worldpos.y < -15 && state==false)
+        if (worldpos.y < -15 && state== false && playerDead != true)
         {
             Debug.Log(worldpos);
             DeathScreenCanvas.SetActive(true);
@@ -38,17 +38,21 @@ public class PlayerDeath : MonoBehaviour
             PauseButton.SetActive(false);
             Time.timeScale = 0f;
             playerDead = true;
-            Text.text += ScoreScript.scoreValue;
+            Score.text += ScoreScript.scoreValue;
             Scoreboard.AddHighscoreEntry(Convert.ToInt32(ScoreScript.scoreValue));
             state = true;
         }
+        
     }
     private void OnTriggerEnter2D(Collider2D collider)
     {
         Debug.Log("Trigger " + collider.gameObject.name + ";" + collider.gameObject.tag);
-        if (collider.gameObject.tag != "Projectile")   
+        if (collider.gameObject.tag != "Projectile" && playerDead != true)   
         {
-            GameObject.Find("Sound").GetComponent<AudioSource>().PlayOneShot(deathSound);
+            if (PlayerPrefs.GetInt("sound") == 1)
+            {
+                GameObject.Find("Sound").GetComponent<AudioSource>().PlayOneShot(deathSound);
+            }
             DeathScreenCanvas.SetActive(true);
             JumpButton.SetActive(false);
             ScoreText.SetActive(false);
@@ -56,7 +60,7 @@ public class PlayerDeath : MonoBehaviour
             PauseButton.SetActive(false);
             Time.timeScale = 0f;
             playerDead = true;
-            Text.text += ScoreScript.scoreValue;
+            Score.text += ScoreScript.scoreValue;
             Scoreboard.AddHighscoreEntry(Convert.ToInt32(ScoreScript.scoreValue));
         }
     }
